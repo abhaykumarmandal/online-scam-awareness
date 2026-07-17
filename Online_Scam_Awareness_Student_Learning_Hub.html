@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Scam Awareness Campaign for Students</title>
+  <style>
+    :root{
+      --navy:#071a33;
+      --blue:#0b67c2;
+      --red:#c81d25;
+      --amber:#f59e0b;
+      --green:#129a67;
+      --ink:#172033;
+      --muted:#5d6675;
+      --paper:#f5f7fb;
+      --white:#ffffff;
+      --line:#d9e0ea;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.55;
+    }
+    .hero{
+      background:linear-gradient(135deg,var(--navy),#0a315d);
+      color:#fff;
+      padding:64px 20px 52px;
+    }
+    .wrap{max-width:1100px;margin:0 auto}
+    .eyebrow{
+      display:inline-block;
+      padding:7px 12px;
+      border:1px solid rgba(255,255,255,.35);
+      border-radius:999px;
+      font-size:13px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+    h1{font-size:clamp(34px,5vw,60px);line-height:1.05;margin:18px 0 14px}
+    .lead{max-width:760px;font-size:20px;color:#dbe7f6}
+    .cta{
+      display:flex;gap:12px;flex-wrap:wrap;margin-top:26px
+    }
+    .btn{
+      display:inline-block;padding:12px 18px;border-radius:10px;
+      text-decoration:none;font-weight:700
+    }
+    .btn.primary{background:#fff;color:var(--navy)}
+    .btn.secondary{border:1px solid rgba(255,255,255,.45);color:#fff}
+    main{padding:40px 20px 70px}
+    section{margin:0 0 34px}
+    .card{
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:26px;
+      box-shadow:0 8px 28px rgba(13,35,65,.06);
+    }
+    h2{font-size:30px;margin:0 0 14px}
+    h3{margin:0 0 8px}
+    .grid{display:grid;gap:18px}
+    .grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media(max-width:780px){
+      .grid.three,.grid.two{grid-template-columns:1fr}
+    }
+    .step{
+      border-top:5px solid var(--blue);
+      position:relative;
+    }
+    .step.stop{border-top-color:var(--red)}
+    .step.check{border-top-color:var(--amber)}
+    .step.report{border-top-color:var(--blue)}
+    .pill{
+      display:inline-block;font-weight:800;padding:5px 10px;border-radius:999px;
+      color:#fff;margin-bottom:10px
+    }
+    .stop .pill{background:var(--red)}
+    .check .pill{background:var(--amber);color:#332100}
+    .report .pill{background:var(--blue)}
+    .scam{
+      border-left:5px solid var(--red)
+    }
+    .scam.blue{border-left-color:var(--blue)}
+    .scam.amber{border-left-color:var(--amber)}
+    ul{padding-left:20px}
+    .callout{
+      background:#fff8e6;border:1px solid #ffd98a;border-radius:14px;padding:18px
+    }
+    .privacy{
+      background:#eef7ff;border:1px solid #c7e3ff;border-radius:14px;padding:18px
+    }
+    .footer{
+      background:var(--navy);color:#dce6f3;padding:28px 20px
+    }
+    .footer small{display:block;max-width:1100px;margin:0 auto}
+    .kpi{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px
+    }
+    .kpi .card{text-align:center;padding:20px}
+    .kpi strong{display:block;font-size:30px;color:var(--navy)}
+    @media(max-width:760px){.kpi{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    .placeholder{
+      border:2px dashed #aab7c7;background:#fafcff;padding:16px;border-radius:12px;
+      color:#5c6877
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Student Digital Safety</span>
+      <h1>Online Scam Awareness Campaign for Students</h1>
+      <p class="lead">Learn how to recognise common scams, protect your money and identity, and respond safely before you click, pay or share.</p>
+      <div class="cta">
+        <a class="btn primary" href="#learn">Start learning</a>
+        <a class="btn secondary" href="#checklist">View safety checklist</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="learn">
+      <div class="grid three">
+        <article class="card step stop">
+          <span class="pill">STOP</span>
+          <h3>Pause before acting</h3>
+          <p>Urgency is a common warning sign. Do not rush to click a link, pay money or share personal information.</p>
+        </article>
+        <article class="card step check">
+          <span class="pill">CHECK</span>
+          <h3>Verify independently</h3>
+          <p>Check the sender, website address, company, landlord or official source using contact details you found yourself.</p>
+        </article>
+        <article class="card step report">
+          <span class="pill">REPORT</span>
+          <h3>Ask for help quickly</h3>
+          <p>Report suspicious messages to your university, bank, platform or another appropriate official service.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Common scams affecting students</h2>
+        <div class="grid two">
+          <article class="card scam">
+            <h3>Phishing emails and scam texts</h3>
+            <p>Messages may imitate a university, bank, delivery company or student-finance service and ask you to click a link or sign in.</p>
+          </article>
+          <article class="card scam amber">
+            <h3>Fake jobs and money-mule offers</h3>
+            <p>Be cautious of jobs promising easy money, asking for upfront fees or requesting use of your bank account to receive or transfer funds.</p>
+          </article>
+          <article class="card scam blue">
+            <h3>Accommodation and deposit scams</h3>
+            <p>Do not pay a deposit before verifying the property, landlord or agency and checking the documents and payment method.</p>
+          </article>
+          <article class="card scam">
+            <h3>Banking, QR and payment scams</h3>
+            <p>Do not share passwords, PINs or one-time passcodes. Avoid scanning unknown QR codes or paying through links sent in urgent messages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="checklist">
+      <div class="card">
+        <h2>Student scam-safety checklist</h2>
+        <div class="grid two">
+          <div>
+            <h3>Before clicking</h3>
+            <ul>
+              <li>Check the full sender address and link destination.</li>
+              <li>Look for pressure, urgency, threats or unrealistic offers.</li>
+              <li>Open the official website or app separately.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Before paying or sharing</h3>
+            <ul>
+              <li>Verify the organisation, job, property or person independently.</li>
+              <li>Never share passwords, PINs or OTP codes.</li>
+              <li>Ask a trusted person or official support service for help.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout">
+          <strong>Remember:</strong> If something feels urgent, secret, unusual or too good to be true, stop and verify it before acting.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Campaign outcomes</h2>
+        <div class="kpi">
+          <div class="card"><strong>21</strong><span>student records analysed</span></div>
+          <div class="card"><strong>3.14/5</strong><span>pre-campaign average</span></div>
+          <div class="card"><strong>4.05/5</strong><span>post-campaign average</span></div>
+          <div class="card"><strong>£0</strong><span>actual cash expenditure</span></div>
+        </div>
+        <p>The campaign produced a complete digital awareness package, delivered an online learning session and collected registration, pre/post quiz and anonymous feedback evidence. The average quiz score increased after the campaign, indicating improved recognition of common scam risks.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Campaign resources</h2>
+        <p>Use this page together with the campaign posters, infographic, checklist and workshop slides.</p>
+        <div class="placeholder">
+          Replace this box with the public links to your Google Forms or shared campaign folder before publishing:
+          <ul>
+            <li>Registration form: [insert public link]</li>
+            <li>Awareness quiz: [insert public link]</li>
+            <li>Campaign materials folder: [insert public link]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="privacy">
+        <strong>Privacy reminder:</strong> Never enter bank details, passwords, PINs, one-time passcodes or personal scam stories into campaign forms.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Online Scam Awareness Campaign for Students · Stop. Check. Report. · Student project resource</small>
+  </footer>
+</body>
+</html>
